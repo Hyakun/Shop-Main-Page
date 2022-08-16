@@ -1,0 +1,647 @@
+/* 
+    #D9F8C4 #F9F9C5 #FAD9A1 #F37878
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+/* Header */
+#header{
+    display: flex;
+    background-color: #fad9a1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.267);
+    top: 0;
+    left: 0;
+}
+
+#header .logo{
+    width: 100px;
+}
+
+#header .nav{
+    display: flex;
+    gap: 50px;
+}
+
+#header ul li {
+    list-style: none;
+}
+
+#header ul li a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f37878;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#header ul li a:hover{
+    color: #f9f9c5;
+}
+
+#header ul li a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #f9f9c5;
+}
+
+.burgerMenu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.l1{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    top:0%;
+    background-color:#f37878;
+}
+.l2{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    top: 40%;
+    background-color:#f37878;
+}
+.l3{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    top: 80%;
+    background-color:#f37878;
+}
+
+/* hero */
+
+#hero{
+    width: 100%;
+    height: 90vh;
+    margin-top: 80px;
+    background-image: url("img/hero1.jpg");
+    background-size: cover;
+    background-position: 40% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h3,#hero h2,#hero h1,#hero p,#hero button{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#hero h3{
+    font-size: 30px;
+    color: #fad9a1;
+}
+#hero h2{
+    font-size: 40px;
+    color: #f37878;
+}
+#hero h1{
+    font-size: 40px;
+    color: rgb(99, 99, 99);
+}
+#hero p{
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+#hero button{
+    width: 150px;
+    background-image: url("img/buttonIMG.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border:none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    color: #f9f9c5;
+}
+
+
+/* features */
+#offers{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-content: center;
+    padding: 50px 80px;
+}
+
+#offers .feature{
+    padding: 20px 10px;
+    border: 1px solid #d16baf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+#offers h3{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8663e7;
+    background-color: #d9f8c4;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+/* Featured Products */
+
+#fprod{
+    text-align: center;
+}
+#fprod h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#fprod .prods{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+
+#fprod .prods .prod{
+    width: 23%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #d16baf;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    transition: 0.2 ease;
+}
+
+#fprod .prods .prod:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.247);
+}
+
+#fprod .prods .prod h2, #fprod .prods .prod p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#fprod .prods .prod p{
+    color: rgb(128, 128, 128);
+}
+
+#fprod .prods .prod h3{
+    font-weight: 500;
+}
+
+#fprod .prods .prod div{
+    color: rgb(255, 166, 0);
+}
+
+#fprod .prods .prod h2{
+    color: #f37878;
+}
+
+#fprod .prods .prod img{
+    width: 100%;
+}
+
+/* call to action */
+
+#cta{
+    background-image: url("img/cta.jpg");
+    background-size: cover;
+    background-position:right 60%;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cta h3, #cta h1{
+    color: #d9f8c4;
+}
+#cta h1{
+    font-size: 35px;
+}
+#cta h1 span{
+    color: #f37878;
+}
+#cta .explore{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+#cta .explore:hover{
+    background-color: #f37878;
+}
+
+/* products2 */
+.fprod2{
+    margin-top: 100px;
+}
+
+/* banners1 */
+
+#banners .banners1{
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#banners .banners1 .banner{
+    color: #fff;
+    height: 50vh;
+    width: 48%;
+    min-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#banners .banners1 .banner h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#banners .banners1 .banner h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#banners .banners1 .banner button{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#banners .banners1 .banner:hover button{
+    background-color: #f37878;
+    border: none;
+}
+
+#banners .banners1 .b1{
+    background-image: url("img/b1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#banners .banners1 .b2{
+    background-image: url("img/b2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* banners2 */
+#banners .banners1 .banner2{
+    color: #fff;
+    height: 30vh;
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banners .banners1 .b3{
+    background-image: url("img/b3.jpg");
+}
+#banners .banners1 .b4{
+    background-image: url("img/b4.jpg");
+}
+#banners .banners1 .b5{
+    background-image: url("img/b5.jpg");
+}
+
+#banners .banners1 .banner2 h2{
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+#banners .banners1 .banner2 h3{
+    color: #f37878;
+}
+
+/* newslatter */
+#newsletter{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    background-image: url("img/news.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#newsletter .info{
+    color: #fff;
+}
+#newsletter .info p{
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(177, 177, 177);
+}
+#newsletter .info span{
+    color: aqua;
+}
+
+#newsletter .form{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+#newsletter .form input{
+    width: 80%;
+    height: 50px;
+    border: 1px solid transparent;
+    font-size: 17px;
+    font-weight: 300;
+    color: rgb(146, 146, 146);
+    padding: 0 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+#newsletter .form button{
+    width: 100px;
+    height: 50px;
+    background-color: #f37878;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* footer */
+
+#footer .copy{
+    width: 100%;
+    text-align: center;
+    color: rgb(165, 165, 165);
+    padding: 10px 0;
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 80px;
+    margin-top: 50px;
+}
+
+#footer .addr{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#footer .addr h3{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+#footer .addr p{
+    margin-bottom: 10px;
+    color: rgb(141, 141, 141);
+    font-size: 14px;
+}
+
+#footer .addr p span{
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+}
+
+#footer .addr img{
+    width: 100px;
+    position: relative;
+    left: -30px;
+}
+
+#footer .about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#footer .about ul{
+    list-style: none;
+    padding: 0;
+}
+#footer .about ul li{
+    margin-bottom: 3px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+#footer .about ul li:hover{
+    color: #f37878;
+}
+
+#footer .app p{
+    color: rgb(100, 100, 100);
+    margin: 10px 0;
+}
+#footer .app .payment{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 1000px){
+    #hero {
+        height: 50vh;
+        background-size: cover;
+    }
+
+    #offers {
+        padding: 50px 150px;
+        flex-wrap: wrap;
+    }
+
+    #fprod .prods {
+        padding: 0 100px;
+    }
+
+    #cta {
+        height: 25vh;
+    }
+    #cta .explore {
+        padding: 20px 30px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+    #banners .banners1 .banner {
+        color: #fff;
+        height: 30vh;
+        width: 100%;
+
+    }
+
+    #banners .banners1 {
+        justify-content: space-evenly;
+    }
+
+    #newsletter {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    #newsletter h2{
+        font-size: 45px;
+    }
+    #newsletter p{
+        font-size: 25px;
+    }
+    #newsletter .form{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 600px){
+    
+    #header {
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    #header .nav{
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100vh;
+        gap: 15px;
+        background-color: #fad9a1;
+        right: -50%;
+        transition: 0.2s ease;
+        top: 60px;
+    }
+
+    #header .open{
+        right: 0%;
+    }
+    
+    #header .burgerMenu{
+        display: block;
+    }
+
+    #offers {
+        padding: 50px 0px;
+        flex-wrap: wrap;
+    }
+
+    #fprod .prods .prod {
+        width: 80%;
+    }
+
+    #fprod .prods {
+        padding: 0;
+    }
+
+    #cta {
+        height: 40vh;
+    }
+
+    #cta h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #cta .explore {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+    #banners .banners1 .banner {
+        min-width: 250px;
+    }
+    #banners .banners1 {
+        padding: 0;
+        justify-content: center;
+    }
+
+    #banners .banners1 .banner2 {
+        width: 100%;
+    }
+    
+    #newsletter {
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+    }
+
+    #newsletter h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #newsletter .info p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+}
